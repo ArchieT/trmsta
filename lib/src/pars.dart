@@ -1,4 +1,4 @@
-library trmsta.take.pars;
+library trmsta.pars;
 
 import "regexes.dart";
 

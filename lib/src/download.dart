@@ -1,4 +1,4 @@
-library trmsta.take.download;
+library trmsta.download;
 
 import 'package:http/http.dart' as http;
 import 'dart:async';

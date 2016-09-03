@@ -1,4 +1,4 @@
-import "package:trmsta/take.dart";
+import "package:trmsta/trmsta.dart";
 import "dart:async";
 
 void main() async {

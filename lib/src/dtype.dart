@@ -1,4 +1,4 @@
-library trmsta.take.dtype;
+library trmsta.dtype;
 
 import "pars.dart";
 import "datapars.dart";

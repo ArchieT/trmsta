@@ -1,4 +1,4 @@
-library trmsta.take.regexes;
+library trmsta.regexes;
 
 //Google Maps array row regex — bike counts and locations
 final RegExp rall = new RegExp(
