@@ -4,4 +4,4 @@ description: TRM station info parsing
 author: "Michał Krzysztof Feiler <archiet@platinum.edu.pl>"
 homepage: "https://github.com/ArchieT/trmsta"
 dependencies:
-        http:
+        http: ^0.11.3
