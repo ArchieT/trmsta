@@ -1,7 +1,7 @@
 import "package:trmsta/trmsta.dart";
 import "dart:async";
 
-void main() async {
+Future main() async {
   print("hej");
   Downloaded nasz = await download();
   print(nasz.ParseSta().map((LocRowSta a) => a.string()));
