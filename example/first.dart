@@ -4,8 +4,8 @@ import "dart:async";
 Future main() async {
   print("hej");
   Downloaded nasz = await download();
-  print(nasz.ParseSta().map((LocRowSta a) => a.string()));
-  print(nasz.ParseData().map((StaData a) => a.string()));
-  print(nasz.ParseAll().map((AllSta a) => a.string()));
+  print(nasz.ParseSta() );
+  print(nasz.ParseData());
+  print(nasz.ParseAll() );
 }
 

@@ -20,14 +20,13 @@ class StaData {
         int.parse(strlist[0]), int.parse(strlist[1]) - 1, strlist[2]);
   }
 
-  String string() {
+  String toString() {
     return this.stanum.toString()+':"'+this.addr+'"';
   }
 }
 
 List<StaData> parseData(String skad) {
   Iterable<Match> matches = rdall.allMatches(skad);
-  print(matches.map((Match match) => match.groups(DCONSTRFROMREGEX)));
   Iterable<StaData> listaiter = matches.map((Match match) =>
       StaData.fromThreeStrList(match.groups(DCONSTRFROMREGEX)));
   List<StaData> lista = new List<StaData>.from(listaiter);

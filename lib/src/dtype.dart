@@ -7,8 +7,8 @@ class AllSta {
   final LocRowSta locrow;
   final StaData data;
   AllSta(this.locrow, this.data);
-  String string() {
-    return locrow.string()+"&"+data.string();
+  String toString() {
+    return locrow.toString()+"&"+data.toString();
   }
 }
 

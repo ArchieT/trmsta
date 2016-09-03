@@ -6,7 +6,7 @@ class RowCount {
   final int dostrow;
   final int wolrow;
   RowCount(this.dostrow, this.wolrow);
-  String string() {
+  String toString() {
     return this.dostrow.toString()+"|"+this.wolrow.toString();
   }
 }
@@ -18,7 +18,7 @@ class Location {
   Location.fromTuple(List<num> tuple)
       : lat = tuple[0],
         lon = tuple[1];
-  String string() {
+  String toString() {
     return this.lat.toString()+","+this.lon.toString();
   }
 }
@@ -37,8 +37,8 @@ class LocRowSta {
     return new LocRowSta.fromNums(int.parse(strlist[0])-1, int.parse(strlist[1]),
         int.parse(strlist[2]), num.parse(strlist[3]), num.parse(strlist[4]));
   }
-  String string() {
-    return "N"+this.stanum.toString()+" R"+this.row.string()+" L"+this.location.string();
+  String toString() {
+    return "N"+this.stanum.toString()+" R"+this.row.toString()+" L"+this.location.toString();
   }
 }
 
