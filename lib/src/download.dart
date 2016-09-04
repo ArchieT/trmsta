@@ -1,6 +1,6 @@
 library trmsta.download;
 
-import 'package:http/http.dart' as http;
+import 'package:flutter/http.dart' as http;
 import 'dart:async';
 import 'dtype.dart';
 
