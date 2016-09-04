@@ -1,8 +1,5 @@
-name: trmsta_flutter
+name: trmsta_nohttp
 version: 0.1.2
 description: TRM station info parsing
 author: "Michał Krzysztof Feiler <archiet@platinum.edu.pl>"
 homepage: "https://github.com/ArchieT/trmsta"
-dependencies:
-        flutter:
-          path: ../../.local/flutter/packages/flutter

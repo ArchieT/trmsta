@@ -1,16 +1,15 @@
 library trmsta.download;
 
-import 'package:flutter/http.dart' as http;
 import 'dart:async';
 import 'dtype.dart';
 
 const THE_URL = "http://trm24.pl/panel-trm/maps.jsp";
 
-Future<String> downloadString([String url = THE_URL]) async {
-  return await http.read(url);
+Future<String> downloadString(String httpreadfunc(String url), [String url = THE_URL]) async {
+  return await httpreadfunc(url);
 }
 
-Future<Downloaded> download([String url = THE_URL]) async {
+Future<Downloaded> download(String httpreadfunc(String url), [String url = THE_URL]) async {
   DateTime time = new DateTime.now();
-  return new Downloaded(await downloadString(url), time);
+  return new Downloaded(await downloadString(httpreadfunc, url), time);
 }
