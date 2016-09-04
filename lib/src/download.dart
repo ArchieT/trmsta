@@ -9,7 +9,7 @@ Future<String> downloadString(Future<String> httpreadfunc(String url), [String u
   return await httpreadfunc(url);
 }
 
-Future<Downloaded> download(String httpreadfunc(String url), [String url = THE_URL]) async {
+Future<Downloaded> download(Future<String> httpreadfunc(String url), [String url = THE_URL]) async {
   DateTime time = new DateTime.now();
   return new Downloaded(await downloadString(httpreadfunc, url), time);
 }
