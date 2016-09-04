@@ -5,3 +5,4 @@ author: "Michał Krzysztof Feiler <archiet@platinum.edu.pl>"
 homepage: "https://github.com/ArchieT/trmsta"
 dependencies:
         flutter:
+          path: ../../.local/flutter/packages/flutter
